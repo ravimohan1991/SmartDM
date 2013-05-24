@@ -1,13 +1,10 @@
 SmartDM
 =======
+> [v0.9.0.5](#version-0905)
 
 SmartDM is a mutator for Unreal Tournament G.O.T.Y, which adds a smart scoreboard and many new statistics/features for 
 Deathmatches.
 
-DETAILS
-========
-* Version - 0.8.4.9
-* Release Date - July 03, 2011
 
 
 COMPATIBILITY
@@ -45,7 +42,7 @@ I have provided a default scoreboard. An extract from its readme.
         FEATURES
         ==================================================================================================
 
-        This ScoreBoard has somewhat same looks as that of SmartCTF.
+        This ScoreBoard looks like SmartCTF scoreboard.
 
         -> Player's faces 
 
@@ -68,10 +65,10 @@ I have provided a default scoreboard. An extract from its readme.
           HS = Head Shots taken
 
         -> Stats
-        -> Eff = Efficiency is defined by Frags/(Frags+Deaths).It is shown in % and a bar is displayed
+        -> Eff = Efficiency is defined by Frags/(Frags+Deaths). It is shown in % and a bar is displayed
         -> Surv = Survivability is defined as timeawake( time between spawn and death )/num_of_deaths
         -> SprEnd = Number of SpreesEnded by the player
-        -> Sucides
+        -> Suicides
         -> MultKil = Multi kills
           DK = Double Kill
           TK = triple kill
@@ -254,13 +251,18 @@ SMartDM is based on code of SmartCTF. Therefore I want to thank all of its autho
 Besides I would like to thank D for his nice suggestions and beta testing.  
 
 
+CHANGELOG
+==========
 
+### Version 0.9.0.5
+- **FIXED**: bSDMSbDef bug.
 
-FEEDBACK
-==================================================================================================
+### Version 0.8.9.9
+- **FIXED**: Accessed none warnings.
 
-If you have some suggestions then please inform me here
-http://www.unrealadmin.org/forums/showthread.php?t=30603&highlight=smartdm
+### Version 0.8.9.8
+- **NEW**: Player's netSpeed in replication..
+- **FIXED**: Replication bug.
+- **FIXED**: Bug related with bNewFragSystem.
+- **TWEAKS**: ClearStats() function in postbeginplay() of SmartDMPlayerReplicationInfo.  
 
-
- 
