@@ -1,22 +1,19 @@
 SmartDM
 =======
 
-Mutator for Unreal Tournament G.O.T.Y
-
-
-Version - 0.8.4.9
-Release Date - July 03, 2011
-==================================================================================================
-
-SmartDM is a mutator which adds a smart scoreboard and many new statistics/features for 
+SmartDM is a mutator for Unreal Tournament G.O.T.Y, which adds a smart scoreboard and many new statistics/features for 
 Deathmatches.
 
+DETAILS
+========
+* Version - 0.8.4.9
+* Release Date - July 03, 2011
 
 
 COMPATIBILITY
 ==================================================================================================
 
-SmartDM supports non-team gametypes
+SmartDM supports non-team gametypes:
 
 1. DeathMatch 
 2. LastManStanding
@@ -29,8 +26,109 @@ FEATURES
 Scoreboard
 -----------
 SmartDM has been designed to support external scoreboards. If you are developer, you are more than 
-welcome to make new scorboards (like snowyscoreboard etc).
-I have provided a default scoreboard. For more information read Scoreboard.txt
+welcome to make custom scorboards (like snowyscoreboard etc).
+I have provided a default scoreboard. An extract from its readme.
+
+
+
+        Product - SmartDMScoreBoard 
+        Version - 0.8.4.9.1.0
+        Author  - The_Cowboy
+        Release Date - July 03, 2011
+        ==================================================================================================
+        COMPATIBILITY
+        ==================================================================================================
+        This version can detect default LMS and shows Lives left instead of Score/Frags.
+        
+        
+        ==================================================================================================
+        FEATURES
+        ==================================================================================================
+
+        This ScoreBoard has somewhat same looks as that of SmartCTF.
+
+        -> Player's faces 
+
+        -> country flags 
+
+        -> Frags/Score
+        If bNewFragSystem is set to true then Frags are shown else Score (Frags-deaths) are shown in 
+        Deathmatch.In LMS Lives left are shown.
+
+        -> Pickups
+          SB = Shield Belts
+          TH = Thigh Pads
+          AM = Amplifiers
+          JB = Jump Boots
+          AR = Armors
+          These are shown in right side of the player's face ,in small font.
+
+        -> Other stuff
+          TIME = Time played on the server
+          HS = Head Shots taken
+
+        -> Stats
+        -> Eff = Efficiency is defined by Frags/(Frags+Deaths).It is shown in % and a bar is displayed
+        -> Surv = Survivability is defined as timeawake( time between spawn and death )/num_of_deaths
+        -> SprEnd = Number of SpreesEnded by the player
+        -> Sucides
+        -> MultKil = Multi kills
+          DK = Double Kill
+          TK = triple kill
+          MK = multi kill   
+          MeK = megak ill
+          UK = Ultra kill
+          MK = monster kill
+        -> Sprees
+          KS = Killing SPree
+          RA = Rampage
+          DO = Dominating
+          UN = Unstoppable
+          GD = Godlike
+        -> PlayerNames are followed by their ranks
+
+        -> In LMS the players havin 0 lives left are shown in grey.
+
+        -> Server's name and time elasped are shown in the footer
+ 
+ 
+        ==================================================================================================
+        INSTALLATION
+        ==================================================================================================
+
+        Turn off the server!
+        Scoreboard084910.u to system folder
+
+        Open server.ini 
+        Scroll to [Engine.GameEngine] section and add
+        
+        ServerPackages=SmartDMScoreBoard084910
+
+        Open SmartDM.ini and set 
+        ScoreBoardType=SmartDMScoreBoard084910.SmartDMScoreBoard
+
+
+        ==================================================================================================
+        CONFIGURING SmartDMScoreboard
+        ==================================================================================================
+
+        No configuration!
+
+
+        ==================================================================================================
+        THANKS
+        ==================================================================================================
+
+        SMartDMScoreBoard is based on code of SmartCTF4D. Therefore I want to thank all of its authors. Let me 
+        name them
+
+        1){PiN}Kev
+        2){DnF2}SiNiSTeR 
+        3)Rush
+
+        Besides I would like to thank D for his nice suggestions and beta testing.  
+
+
 SmartDM can automatically bind "ShowScoreboard" to F3.
 
 Player statistics
