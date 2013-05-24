@@ -29,14 +29,14 @@ I have provided a default scoreboard. An extract from its readme.
 
 
         Product - SmartDMScoreBoard 
-        Version - 0.8.4.9.1.0
+        Version - 0.9.0.5.1.0
         Author  - The_Cowboy
-        Release Date - July 03, 2011
+        Release Date - July 16, 2011
         ==================================================================================================
         COMPATIBILITY
         ==================================================================================================
-        This version can detect default LMS and shows Lives left instead of Score/Frags.
-        
+        SmartDM0.9.0.5
+                
         
         ==================================================================================================
         FEATURES
@@ -87,6 +87,8 @@ I have provided a default scoreboard. An extract from its readme.
         -> In LMS the players havin 0 lives left are shown in grey.
 
         -> Server's name and time elasped are shown in the footer
+        
+        -> This version can detect default LMS and LMS++.
  
  
         ==================================================================================================
@@ -94,22 +96,29 @@ I have provided a default scoreboard. An extract from its readme.
         ==================================================================================================
 
         Turn off the server!
-        Scoreboard084910.u to system folder
+        Extract Scoreboard090510.u to system folder
 
         Open server.ini 
         Scroll to [Engine.GameEngine] section and add
         
-        ServerPackages=SmartDMScoreBoard084910
+        ServerPackages=SmartDMScoreBoard090510
 
         Open SmartDM.ini and set 
-        ScoreBoardType=SmartDMScoreBoard084910.SmartDMScoreBoard
+        ScoreBoardType=SmartDMScoreBoard090510.SmartDMScoreBoard
 
 
         ==================================================================================================
         CONFIGURING SmartDMScoreboard
         ==================================================================================================
 
-        No configuration!
+        After first run a file named as SmartDMScoreboard.ini will be created in client's system folder.
+
+        bShowNetSpeedAndPL
+        Setting this to true will show NetSpeed and Packet loss instead of Survivability and SpreeEnds to 
+        that particular client.
+
+        NOTE:- These are client side settings only. Clients can and will decide what they want to see.
+
 
 
         ==================================================================================================
@@ -123,7 +132,33 @@ I have provided a default scoreboard. An extract from its readme.
         2){DnF2}SiNiSTeR 
         3)Rush
 
-        Besides I would like to thank D for his nice suggestions and beta testing.  
+        Besides I would like to thank D for his nice suggestions and beta testing. 
+        
+        
+        ==================================================================================================
+        CHANGELOG
+        ==================================================================================================
+
+        Version - 0.9.0.5.1.0
+
+        [FIXED] Netspeed percentage issues.
+
+
+        Version - 0.8.9.9.1.0
+
+        Recomplie for SmartDM0899
+
+ 
+        Version - 0.8.9.8.1.0
+
+        [Improved] Player Rank and Frags/Lives text of players having 0 lives are shown in gray.
+        
+        [Improved] More flexible recognition of LMS.
+        
+        [FIXED] Time limit interfering part of player stats.
+        
+        [ADDED] NetSpeed and Packet Loss as stats. 
+
 
 
 SmartDM can automatically bind "ShowScoreboard" to F3.
@@ -248,7 +283,7 @@ SMartDM is based on code of SmartCTF. Therefore I want to thank all of its autho
 * adminthis
 * Spongebob
 
-Besides I would like to thank D for his nice suggestions and beta testing.  
+I would like to thank D for his nice suggestions and beta testing and iloveut99 for pointing out some things I missed.  
 
 
 CHANGELOG
