@@ -159,8 +159,10 @@ I have provided a default scoreboard. An extract from its readme.
         
         [ADDED] NetSpeed and Packet Loss as stats. 
 
-        Here is the snapshot of scoreboard.
-        ![ScreenShot](https://raw.github.com/snap.jpeg)
+
+Here is the snapshot of this scoreboard.
+
+![ScreenShot](https://raw.github.com/ravimohan1991/SmartDM/master/snap.jpeg)
         
 SmartDM can automatically bind "ShowScoreboard" to F3.
 
